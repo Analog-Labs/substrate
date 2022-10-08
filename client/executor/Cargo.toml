@@ -60,7 +60,8 @@ harness = false
 [features]
 default = ["std"]
 # This crate does not have `no_std` support, we just require this for tests
-std = []
+std = ["sp-runtime-interface/std"]
 wasm-extern-trace = []
 wasmtime = ["sc-executor-wasmtime"]
 wasmer-sandbox = ["sc-executor-common/wasmer-sandbox"]
+
