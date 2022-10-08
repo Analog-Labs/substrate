@@ -22,3 +22,9 @@ sp-runtime-interface = { version = "6.0.0", path = "../" }
 sp-runtime-interface-test-wasm = { version = "2.0.0", path = "../test-wasm" }
 sp-runtime-interface-test-wasm-deprecated = { version = "2.0.0", path = "../test-wasm-deprecated" }
 sp-state-machine = { version = "0.12.0", path = "../../state-machine" }
+
+[features]
+default = ["std"]
+std = [
+	"sp-runtime-interface/std",
+]
