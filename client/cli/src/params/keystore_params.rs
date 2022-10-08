@@ -29,7 +29,7 @@ use std::{
 const DEFAULT_KEYSTORE_CONFIG_PATH: &str = "keystore";
 
 /// Parameters of the keystore
-#[derive(Debug, Clone, Args)]
+#[derive(Debug, Clone, Args, Default)]
 pub struct KeystoreParams {
 	/// Specify custom URIs to connect to for keystore-services
 	#[clap(long)]
